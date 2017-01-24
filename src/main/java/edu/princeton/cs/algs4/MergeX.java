@@ -90,7 +90,9 @@ public class MergeX {
      */
     public static void sort(Comparable[] a) {
         Comparable[] aux = a.clone();
+        show(aux);
         sort(aux, a, 0, a.length-1);  
+        System.out.println("~~~~~~~~~~~~~~");
         assert isSorted(a);
     }
 
@@ -224,7 +226,8 @@ public class MergeX {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        String[] a = StdIn.readAllStrings();
+//        String[] a = StdIn.readAllStrings();
+    	String[] a = {"q","j","mix","sort","x","d","a","b","c"};
         MergeX.sort(a);
         show(a);
     }
