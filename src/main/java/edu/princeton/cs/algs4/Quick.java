@@ -76,7 +76,7 @@ public class Quick {
 
             // find item on hi to swap
             while (less(v, a[--j]))
-                if (j == lo) break;      // redundant since a[lo] acts as sentinel
+                if (j == lo) break;      // redundant since a[lo] acts as sentinel,a[lo] can not less than itself
 
             // check if pointers cross
             if (i >= j) break;
